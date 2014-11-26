@@ -40,6 +40,13 @@ module.exports = function (grunt) {
                 options.ngAnnotateOptions.remove = false;
             }
 
+            if (options.es6 != null) {
+                options.ngAnnotateOptions.es6 = options.es6;
+                delete options.es6;
+            } else {
+                options.ngAnnotateOptions.es6 = false;
+            }
+
             if (options.regexp != null) {
                 options.ngAnnotateOptions.regexp = options.regexp;
                 delete options.regexp;
