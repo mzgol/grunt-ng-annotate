@@ -1,6 +1,6 @@
 {
   "name": "grunt-ng-annotate",
-  "version": "0.7.1-pre",
+  "version": "0.8.1-pre",
   "description": "Add, remove and rebuild AngularJS dependency injection annotations.",
   "homepage": "https://github.com/mzgol/grunt-ng-annotate",
   "author": {
@@ -37,7 +37,7 @@
     "tasks"
   ],
   "dependencies": {
-    "ng-annotate": "~0.13.0"
+    "ng-annotate": "~0.14.0"
   },
   "devDependencies": {
     "expect.js": "0.3.1",
@@ -45,7 +45,7 @@
     "grunt-contrib-clean": "0.6.0",
     "grunt-eslint": "2.0.0",
     "grunt-jscs": "0.8.1",
-    "grunt-mocha-test": "0.12.3",
+    "grunt-mocha-test": "0.12.4",
     "jscs-trailing-comma": "0.3.0",
     "load-grunt-tasks": "1.0.0",
     "mocha": "2.0.1",
