@@ -156,9 +156,10 @@ module.exports = function (grunt) {
                     ngAnnotateOptions.sourcemap.inFile = getPathFromTo(mapping.dest, mapping.src[0]);
                 }
 
+                // seperator for file concatenation; defaults to linefeed
                 var separator = (typeof ngAnnotateOptions.separator === 'string') ?
-                        ngAnnotateOptions.separator + '\n' :
-                        '\n';
+                        ngAnnotateOptions.separator :
+                        grunt.util.linefeed;
 
                 var concatenatedSource = mapping.src.map(function (file) {
                     return grunt.file.read(file);

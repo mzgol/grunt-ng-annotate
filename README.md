@@ -76,6 +76,14 @@ Type: `boolean`
 
 Default: `false`
 
+### separator
+
+Type: `String`
+
+Default: `grunt.util.linefeed`
+
+Concatenated files will be joined on this string. 
+
 ### sourceMap
 
 Enables source map generation.
