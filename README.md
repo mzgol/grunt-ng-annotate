@@ -78,11 +78,13 @@ Default: `false`
 
 ### separator
 
-Type: `String`
+Concatenated files will be joined on this string. 
+
+Type: `string`
 
 Default: `grunt.util.linefeed`
 
-Concatenated files will be joined on this string. 
+If you're post-processing concatenated JavaScript files with a minifier, you may need to use a semicolon ';' as the separator.
 
 ### sourceMap
 
