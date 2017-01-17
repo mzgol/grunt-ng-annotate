@@ -111,7 +111,7 @@ Default: `{}`
 grunt.initConfig({
     ngAnnotate: {
         options: {
-            singleQuotes: true,
+            singleQuotes: true
         },
         app1: {
             files: {
