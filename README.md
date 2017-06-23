@@ -32,8 +32,8 @@ grunt.initConfig({
         },
         your_target: {
             // Target-specific file lists and/or options go here.
-        },
-    },
+        }
+    }
 })
 ```
 
@@ -117,8 +117,8 @@ grunt.initConfig({
             files: {
                 'a.js': ['a.js'],
                 'c.js': ['b.js'],
-                'f.js': ['d.js', 'e.js'],
-            },
+                'f.js': ['d.js', 'e.js']
+            }
         },
         app2: {
             files: [
@@ -126,8 +126,8 @@ grunt.initConfig({
                     expand: true,
                     src: ['f.js'],
                     ext: '.annotated.js', // Dest filepaths will have this extension.
-                    extDot: 'last',       // Extensions in filenames begin after the last dot
-                },
+                    extDot: 'last'        // Extensions in filenames begin after the last dot
+                }
             ],
         },
         app3: {
@@ -136,10 +136,10 @@ grunt.initConfig({
                     expand: true,
                     src: ['g.js'],
                     rename: function (dest, src) { return src + '-annotated'; },
-                },
-            ],
-        },
-    },
+                }
+            ]
+        }
+    }
 });
 
 grunt.loadNpmTasks('grunt-ng-annotate');
